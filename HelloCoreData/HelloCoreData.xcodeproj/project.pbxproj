@@ -3,31 +3,32 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 55;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		8D182DA025D1E37100E05852 /* HelloCoreDataApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D182D9F25D1E37100E05852 /* HelloCoreDataApp.swift */; };
-		8D182DA225D1E37100E05852 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D182DA125D1E37100E05852 /* ContentView.swift */; };
-		8D182DA425D1E37200E05852 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8D182DA325D1E37200E05852 /* Assets.xcassets */; };
-		8D182DA725D1E37200E05852 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8D182DA625D1E37200E05852 /* Preview Assets.xcassets */; };
-		8D182DB125D1E67300E05852 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D182DB025D1E67300E05852 /* CoreDataManager.swift */; };
-		8D182DB625D1E6C800E05852 /* HelloCoreData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8D182DB425D1E6C800E05852 /* HelloCoreData.xcdatamodeld */; };
+		20C8A59B289125EB00163DDC /* HelloCoreDataApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20C8A59A289125EB00163DDC /* HelloCoreDataApp.swift */; };
+		20C8A59D289125EB00163DDC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20C8A59C289125EB00163DDC /* ContentView.swift */; };
+		20C8A59F289125EC00163DDC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 20C8A59E289125EC00163DDC /* Assets.xcassets */; };
+		20C8A5A2289125EC00163DDC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 20C8A5A1289125EC00163DDC /* Preview Assets.xcassets */; };
+		20C8A5AA2891266900163DDC /* HelloCoreDataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 20C8A5A82891266900163DDC /* HelloCoreDataModel.xcdatamodeld */; };
+		20C8A5AD289129F600163DDC /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20C8A5AC289129F600163DDC /* CoreDataManager.swift */; };
+		20C8A5AF28913C1600163DDC /* MovieDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20C8A5AE28913C1600163DDC /* MovieDetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		8D182D9C25D1E37100E05852 /* HelloCoreData.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HelloCoreData.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		8D182D9F25D1E37100E05852 /* HelloCoreDataApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelloCoreDataApp.swift; sourceTree = "<group>"; };
-		8D182DA125D1E37100E05852 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		8D182DA325D1E37200E05852 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		8D182DA625D1E37200E05852 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		8D182DA825D1E37200E05852 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		8D182DB025D1E67300E05852 /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
-		8D182DB525D1E6C800E05852 /* HelloCoreData.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = HelloCoreData.xcdatamodel; sourceTree = "<group>"; };
+		20C8A597289125EB00163DDC /* HelloCoreData.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HelloCoreData.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		20C8A59A289125EB00163DDC /* HelloCoreDataApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelloCoreDataApp.swift; sourceTree = "<group>"; };
+		20C8A59C289125EB00163DDC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		20C8A59E289125EC00163DDC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		20C8A5A1289125EC00163DDC /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		20C8A5A92891266900163DDC /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
+		20C8A5AC289129F600163DDC /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
+		20C8A5AE28913C1600163DDC /* MovieDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		8D182D9925D1E37100E05852 /* Frameworks */ = {
+		20C8A594289125EB00163DDC /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -37,48 +38,48 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		8D182D9325D1E37100E05852 = {
+		20C8A58E289125EB00163DDC = {
 			isa = PBXGroup;
 			children = (
-				8D182D9E25D1E37100E05852 /* HelloCoreData */,
-				8D182D9D25D1E37100E05852 /* Products */,
+				20C8A599289125EB00163DDC /* HelloCoreData */,
+				20C8A598289125EB00163DDC /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		8D182D9D25D1E37100E05852 /* Products */ = {
+		20C8A598289125EB00163DDC /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				8D182D9C25D1E37100E05852 /* HelloCoreData.app */,
+				20C8A597289125EB00163DDC /* HelloCoreData.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		8D182D9E25D1E37100E05852 /* HelloCoreData */ = {
+		20C8A599289125EB00163DDC /* HelloCoreData */ = {
 			isa = PBXGroup;
 			children = (
-				8D182DAF25D1E66500E05852 /* Managers */,
-				8D182D9F25D1E37100E05852 /* HelloCoreDataApp.swift */,
-				8D182DA125D1E37100E05852 /* ContentView.swift */,
-				8D182DA325D1E37200E05852 /* Assets.xcassets */,
-				8D182DA825D1E37200E05852 /* Info.plist */,
-				8D182DA525D1E37200E05852 /* Preview Content */,
-				8D182DB425D1E6C800E05852 /* HelloCoreData.xcdatamodeld */,
+				20C8A5AB289129BE00163DDC /* Managers */,
+				20C8A59A289125EB00163DDC /* HelloCoreDataApp.swift */,
+				20C8A59C289125EB00163DDC /* ContentView.swift */,
+				20C8A59E289125EC00163DDC /* Assets.xcassets */,
+				20C8A5A0289125EC00163DDC /* Preview Content */,
+				20C8A5A82891266900163DDC /* HelloCoreDataModel.xcdatamodeld */,
+				20C8A5AE28913C1600163DDC /* MovieDetailView.swift */,
 			);
 			path = HelloCoreData;
 			sourceTree = "<group>";
 		};
-		8D182DA525D1E37200E05852 /* Preview Content */ = {
+		20C8A5A0289125EC00163DDC /* Preview Content */ = {
 			isa = PBXGroup;
 			children = (
-				8D182DA625D1E37200E05852 /* Preview Assets.xcassets */,
+				20C8A5A1289125EC00163DDC /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		8D182DAF25D1E66500E05852 /* Managers */ = {
+		20C8A5AB289129BE00163DDC /* Managers */ = {
 			isa = PBXGroup;
 			children = (
-				8D182DB025D1E67300E05852 /* CoreDataManager.swift */,
+				20C8A5AC289129F600163DDC /* CoreDataManager.swift */,
 			);
 			path = Managers;
 			sourceTree = "<group>";
@@ -86,13 +87,13 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		8D182D9B25D1E37100E05852 /* HelloCoreData */ = {
+		20C8A596289125EB00163DDC /* HelloCoreData */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 8D182DAB25D1E37200E05852 /* Build configuration list for PBXNativeTarget "HelloCoreData" */;
+			buildConfigurationList = 20C8A5A5289125EC00163DDC /* Build configuration list for PBXNativeTarget "HelloCoreData" */;
 			buildPhases = (
-				8D182D9825D1E37100E05852 /* Sources */,
-				8D182D9925D1E37100E05852 /* Frameworks */,
-				8D182D9A25D1E37100E05852 /* Resources */,
+				20C8A593289125EB00163DDC /* Sources */,
+				20C8A594289125EB00163DDC /* Frameworks */,
+				20C8A595289125EB00163DDC /* Resources */,
 			);
 			buildRules = (
 			);
@@ -100,76 +101,77 @@
 			);
 			name = HelloCoreData;
 			productName = HelloCoreData;
-			productReference = 8D182D9C25D1E37100E05852 /* HelloCoreData.app */;
+			productReference = 20C8A597289125EB00163DDC /* HelloCoreData.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		8D182D9425D1E37100E05852 /* Project object */ = {
+		20C8A58F289125EB00163DDC /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1230;
-				LastUpgradeCheck = 1230;
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1340;
+				LastUpgradeCheck = 1340;
 				TargetAttributes = {
-					8D182D9B25D1E37100E05852 = {
-						CreatedOnToolsVersion = 12.3;
+					20C8A596289125EB00163DDC = {
+						CreatedOnToolsVersion = 13.4.1;
 					};
 				};
 			};
-			buildConfigurationList = 8D182D9725D1E37100E05852 /* Build configuration list for PBXProject "HelloCoreData" */;
-			compatibilityVersion = "Xcode 9.3";
+			buildConfigurationList = 20C8A592289125EB00163DDC /* Build configuration list for PBXProject "HelloCoreData" */;
+			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 				Base,
 			);
-			mainGroup = 8D182D9325D1E37100E05852;
-			productRefGroup = 8D182D9D25D1E37100E05852 /* Products */;
+			mainGroup = 20C8A58E289125EB00163DDC;
+			productRefGroup = 20C8A598289125EB00163DDC /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				8D182D9B25D1E37100E05852 /* HelloCoreData */,
+				20C8A596289125EB00163DDC /* HelloCoreData */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		8D182D9A25D1E37100E05852 /* Resources */ = {
+		20C8A595289125EB00163DDC /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8D182DA725D1E37200E05852 /* Preview Assets.xcassets in Resources */,
-				8D182DA425D1E37200E05852 /* Assets.xcassets in Resources */,
+				20C8A5A2289125EC00163DDC /* Preview Assets.xcassets in Resources */,
+				20C8A59F289125EC00163DDC /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		8D182D9825D1E37100E05852 /* Sources */ = {
+		20C8A593289125EB00163DDC /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8D182DB125D1E67300E05852 /* CoreDataManager.swift in Sources */,
-				8D182DB625D1E6C800E05852 /* HelloCoreData.xcdatamodeld in Sources */,
-				8D182DA225D1E37100E05852 /* ContentView.swift in Sources */,
-				8D182DA025D1E37100E05852 /* HelloCoreDataApp.swift in Sources */,
+				20C8A5AF28913C1600163DDC /* MovieDetailView.swift in Sources */,
+				20C8A59D289125EB00163DDC /* ContentView.swift in Sources */,
+				20C8A59B289125EB00163DDC /* HelloCoreDataApp.swift in Sources */,
+				20C8A5AD289129F600163DDC /* CoreDataManager.swift in Sources */,
+				20C8A5AA2891266900163DDC /* HelloCoreDataModel.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		8D182DA925D1E37200E05852 /* Debug */ = {
+		20C8A5A3289125EC00163DDC /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
-				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_ENABLE_OBJC_WEAK = YES;
@@ -213,7 +215,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -223,14 +225,13 @@
 			};
 			name = Debug;
 		};
-		8D182DAA25D1E37200E05852 /* Release */ = {
+		20C8A5A4289125EC00163DDC /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
-				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_ENABLE_OBJC_WEAK = YES;
@@ -268,7 +269,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -278,45 +279,59 @@
 			};
 			name = Release;
 		};
-		8D182DAC25D1E37200E05852 /* Debug */ = {
+		20C8A5A6289125EC00163DDC /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"HelloCoreData/Preview Content\"";
-				DEVELOPMENT_TEAM = B2Q8EGNCQA;
+				DEVELOPMENT_TEAM = 69MTM74BLP;
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = HelloCoreData/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.azamsharp.HelloCoreData;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.cuspy.learning.HelloCoreData;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
-		8D182DAD25D1E37200E05852 /* Release */ = {
+		20C8A5A7289125EC00163DDC /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"HelloCoreData/Preview Content\"";
-				DEVELOPMENT_TEAM = B2Q8EGNCQA;
+				DEVELOPMENT_TEAM = 69MTM74BLP;
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = HelloCoreData/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.azamsharp.HelloCoreData;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.cuspy.learning.HelloCoreData;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -325,20 +340,20 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		8D182D9725D1E37100E05852 /* Build configuration list for PBXProject "HelloCoreData" */ = {
+		20C8A592289125EB00163DDC /* Build configuration list for PBXProject "HelloCoreData" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				8D182DA925D1E37200E05852 /* Debug */,
-				8D182DAA25D1E37200E05852 /* Release */,
+				20C8A5A3289125EC00163DDC /* Debug */,
+				20C8A5A4289125EC00163DDC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		8D182DAB25D1E37200E05852 /* Build configuration list for PBXNativeTarget "HelloCoreData" */ = {
+		20C8A5A5289125EC00163DDC /* Build configuration list for PBXNativeTarget "HelloCoreData" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				8D182DAC25D1E37200E05852 /* Debug */,
-				8D182DAD25D1E37200E05852 /* Release */,
+				20C8A5A6289125EC00163DDC /* Debug */,
+				20C8A5A7289125EC00163DDC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -346,17 +361,17 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		8D182DB425D1E6C800E05852 /* HelloCoreData.xcdatamodeld */ = {
+		20C8A5A82891266900163DDC /* HelloCoreDataModel.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				8D182DB525D1E6C800E05852 /* HelloCoreData.xcdatamodel */,
+				20C8A5A92891266900163DDC /* Model.xcdatamodel */,
 			);
-			currentVersion = 8D182DB525D1E6C800E05852 /* HelloCoreData.xcdatamodel */;
-			path = HelloCoreData.xcdatamodeld;
+			currentVersion = 20C8A5A92891266900163DDC /* Model.xcdatamodel */;
+			path = HelloCoreDataModel.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};
 /* End XCVersionGroup section */
 	};
-	rootObject = 8D182D9425D1E37100E05852 /* Project object */;
+	rootObject = 20C8A58F289125EB00163DDC /* Project object */;
 }

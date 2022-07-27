@@ -2,7 +2,7 @@
 //  HelloCoreDataApp.swift
 //  HelloCoreData
 //
-//  Created by Mohammad Azam on 2/8/21.
+//  Created by Oles Novikov on 27.07.22.
 //
 
 import SwiftUI

@@ -2,9 +2,10 @@
 //  CoreDataManager.swift
 //  HelloCoreData
 //
-//  Created by Mohammad Azam on 2/8/21.
+//  Created by Oles Novikov on 27.07.22.
 //
 
+import Foundation
 import CoreData
 
 class CoreDataManager {
@@ -12,39 +13,51 @@ class CoreDataManager {
     let persistentContainer: NSPersistentContainer
     
     init() {
-        persistentContainer = NSPersistentContainer(name: "HelloCoreData")
-        persistentContainer.loadPersistentStores { (description, error) in
+        persistentContainer = NSPersistentContainer(name: "HelloCoreDataModel")
+        persistentContainer.loadPersistentStores { description, error in
             if let error = error {
-                fatalError("Core Data store failed to initialize \(error.localizedDescription)")
+                fatalError("Core Data Store failed to initialize \(error.localizedDescription)")
             }
         }
-        
-        let dirPaths = NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true)
-        print(dirPaths[0])
     }
     
     func getAllMovies() -> [Movie] {
-        
         let fetchRequest: NSFetchRequest<Movie> = Movie.fetchRequest()
-        
         do {
             return try persistentContainer.viewContext.fetch(fetchRequest)
         } catch {
-            return [] 
+            print("Fetch error \(error.localizedDescription)")
+            return []
         }
     }
     
-    func saveMovie(name: String) {
-        
+    func saveMovie(title: String) {
         let movie = Movie(context: persistentContainer.viewContext)
-    
-        movie.title = name
-        
+        movie.title = title
         do {
             try persistentContainer.viewContext.save()
-            print("Movie Saved Successfully")
+            print("Movie saved!")
         } catch {
-            print("Failed to save movie \(error)")
+            print("Failed to save movie \(error.localizedDescription)")
+        }
+    }
+    
+    func deleteMovie(movie: Movie) {
+        persistentContainer.viewContext.delete(movie)
+        do {
+            try persistentContainer.viewContext.save()
+        } catch {
+            persistentContainer.viewContext.rollback()
+            print("Delete error \(error.localizedDescription)")
+        }
+    }
+    
+    func updateMovie() {
+        do {
+            try persistentContainer.viewContext.save()
+        } catch {
+            persistentContainer.viewContext.rollback()
+            print("Error in updating movie \(error.localizedDescription)")
         }
     }
     
