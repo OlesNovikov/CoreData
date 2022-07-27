@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		20C8A5B228915D0F00163DDC /* MovieAppModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 20C8A5B028915D0F00163DDC /* MovieAppModel.xcdatamodeld */; };
+		20C8A5B428915F8C00163DDC /* AddMovieViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20C8A5B328915F8C00163DDC /* AddMovieViewModel.swift */; };
+		20C8A5B62891623E00163DDC /* MovieListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20C8A5B52891623E00163DDC /* MovieListViewModel.swift */; };
 		8D0926C125E59B3B00502FF8 /* MovieAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D0926C025E59B3B00502FF8 /* MovieAppApp.swift */; };
 		8D0926C525E59B3C00502FF8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8D0926C425E59B3C00502FF8 /* Assets.xcassets */; };
 		8D0926C825E59B3C00502FF8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8D0926C725E59B3C00502FF8 /* Preview Assets.xcassets */; };
@@ -19,6 +22,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		20C8A5B128915D0F00163DDC /* MovieAppModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MovieAppModel.xcdatamodel; sourceTree = "<group>"; };
+		20C8A5B328915F8C00163DDC /* AddMovieViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddMovieViewModel.swift; sourceTree = "<group>"; };
+		20C8A5B52891623E00163DDC /* MovieListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieListViewModel.swift; sourceTree = "<group>"; };
 		8D0926BD25E59B3B00502FF8 /* MovieApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MovieApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D0926C025E59B3B00502FF8 /* MovieAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieAppApp.swift; sourceTree = "<group>"; };
 		8D0926C425E59B3C00502FF8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -71,6 +77,7 @@
 				8D0926C425E59B3C00502FF8 /* Assets.xcassets */,
 				8D0926C925E59B3C00502FF8 /* Info.plist */,
 				8D0926C625E59B3C00502FF8 /* Preview Content */,
+				20C8A5B028915D0F00163DDC /* MovieAppModel.xcdatamodeld */,
 			);
 			path = MovieApp;
 			sourceTree = "<group>";
@@ -94,6 +101,8 @@
 		8D2C952C25E6907D00459F4F /* View Models */ = {
 			isa = PBXGroup;
 			children = (
+				20C8A5B328915F8C00163DDC /* AddMovieViewModel.swift */,
+				20C8A5B52891623E00163DDC /* MovieListViewModel.swift */,
 			);
 			path = "View Models";
 			sourceTree = "<group>";
@@ -194,12 +203,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				8D5C25C325E6EBD0002BAF40 /* AddMovieScreen.swift in Sources */,
+				20C8A5B428915F8C00163DDC /* AddMovieViewModel.swift in Sources */,
 				8D5C25E225E72CD4002BAF40 /* Date+Extensions.swift in Sources */,
 				8D0926D525E5AE9C00502FF8 /* CoreDataManager.swift in Sources */,
 				8D5C25C825E6F3D8002BAF40 /* View+Extensions.swift in Sources */,
+				20C8A5B228915D0F00163DDC /* MovieAppModel.xcdatamodeld in Sources */,
 				8D5C25DF25E72747002BAF40 /* MovieListScreen.swift in Sources */,
 				8D0926C125E59B3B00502FF8 /* MovieAppApp.swift in Sources */,
 				8D5C25D025E6FA7C002BAF40 /* RatingView.swift in Sources */,
+				20C8A5B62891623E00163DDC /* MovieListViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -388,6 +400,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		20C8A5B028915D0F00163DDC /* MovieAppModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				20C8A5B128915D0F00163DDC /* MovieAppModel.xcdatamodel */,
+			);
+			currentVersion = 20C8A5B128915D0F00163DDC /* MovieAppModel.xcdatamodel */;
+			path = MovieAppModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 8D0926B525E59B3B00502FF8 /* Project object */;
 }

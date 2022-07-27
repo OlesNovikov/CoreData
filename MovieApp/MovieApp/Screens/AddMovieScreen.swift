@@ -11,26 +11,24 @@ struct AddMovieScreen: View {
     
     @Environment(\.presentationMode) var presentationMode
     
-    @State private var title: String = ""
-    @State private var director: String = ""
-    @State private var releaseDate: Date = Date()
-    @State private var rating: Int? = nil
+    @StateObject private var addMovieViewModel = AddMovieViewModel()
     
     var body: some View {
         Form {
-            TextField("Enter name", text: $title)
-            TextField("Enter director", text: $director)
+            TextField("Enter name", text: $addMovieViewModel.title)
+            TextField("Enter director", text: $addMovieViewModel.director)
             HStack {
                 Text("Rating")
                 Spacer()
-                RatingView(rating: $rating)
+                RatingView(rating: $addMovieViewModel.rating)
             }
-            DatePicker("Release Date", selection: $releaseDate)
+            DatePicker("Release Date", selection: $addMovieViewModel.releaseDate)
             
             HStack {
                 Spacer()
                 Button("Save") {
-                    
+                    addMovieViewModel.save()
+                    presentationMode.wrappedValue.dismiss()
                 }
                 Spacer()
             }
