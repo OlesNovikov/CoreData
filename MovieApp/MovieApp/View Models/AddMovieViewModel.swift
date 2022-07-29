@@ -2,27 +2,27 @@
 //  AddMovieViewModel.swift
 //  MovieApp
 //
-//  Created by Oles Novikov on 27.07.22.
+//  Created by Mohammad Azam on 2/26/21.
 //
 
 import Foundation
 
 class AddMovieViewModel: ObservableObject {
     
-    @Published var title: String = ""
-    @Published var director: String = ""
+    var title: String = ""
+    var director: String = ""
     @Published var rating: Int? = nil
-    @Published var releaseDate: Date = Date()
+    var releaseDate: Date = Date()
     
     func save() {
-        let manager = CoreDataManager.shared
-        let movie = Movie(context: manager.persistentContainer.viewContext)
+        
+        let movie = Movie(context: Movie.viewContext)
         movie.title = title
         movie.director = director
         movie.rating = Double(rating ?? 0)
         movie.releaseDate = releaseDate
         
-        manager.save()
+        try? movie.save() 
     }
     
 }

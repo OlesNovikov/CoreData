@@ -2,7 +2,7 @@
 //  MovieListViewModel.swift
 //  MovieApp
 //
-//  Created by Oles Novikov on 27.07.22.
+//  Created by Mohammad Azam on 2/26/21.
 //
 
 import Foundation
@@ -10,29 +10,27 @@ import CoreData
 
 class MovieListViewModel: ObservableObject {
     
-    @Published var movies: [MovieViewModel] = [MovieViewModel]()
-    
-    func getAllMovies() {
-        let movies = CoreDataManager.shared.getAllMovies()
-        DispatchQueue.main.async {
-            self.movies = movies.map(MovieViewModel.init)
-        }
-    }
+    @Published var movies = [MovieViewModel]()
     
     func deleteMovie(movie: MovieViewModel) {
-        let movie = CoreDataManager.shared.getMovieById(id: movie.id)
+        let movie: Movie? = Movie.byId(id: movie.movieId)
         if let movie = movie {
-            CoreDataManager.shared.deleteMovie(movie)
+            try? movie.delete()
         }
     }
     
+    func getAllMovies() {
+        DispatchQueue.main.async {
+            self.movies = Movie.all().map(MovieViewModel.init)
+        }
+    }
 }
 
 struct MovieViewModel {
     
     let movie: Movie
     
-    var id: NSManagedObjectID {
+    var movieId: NSManagedObjectID {
         return movie.objectID
     }
     
@@ -51,5 +49,4 @@ struct MovieViewModel {
     var rating: Int? {
         return Int(movie.rating)
     }
-    
 }
